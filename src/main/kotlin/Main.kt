@@ -1,0 +1,107 @@
+import java.net.URI
+import java.net.http.HttpClient
+import java.net.http.HttpRequest
+import java.net.http.HttpResponse
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Meteo(
+    val listDatosDiarios: List<DatosDiarios>
+)
+
+@Serializable
+data class DatosDiarios(
+    val `data`: String,
+    val listaEstacions: List<ListaEstacions>
+)
+
+@Serializable
+data class ListaEstacions(
+    val concello: String,
+    val estacion: String,
+    val idEstacion: Int,
+    val listaMedidas: List<ListaMedidas>,
+    val provincia: String,
+    val utmx: String,
+    val utmy: String
+)
+
+@Serializable
+data class ListaMedidas(
+    val codigoParametro: String,
+    val lnCodigoValidacion: Int,
+    val nomeParametro: String,
+    val unidade: String,
+    val valor: Double
+)
+
+data class temperaturaMaxima(
+    val estacion: String,
+    val temperatura: Double
+)
+fun main() {
+
+    //  crear cliente http
+    val client = HttpClient.newHttpClient()
+
+    // crear solicitud
+    val request = HttpRequest.newBuilder()
+        .uri(URI.create("https://servizos.meteogalicia.gal/mgrss/observacion/datosDiariosEstacionsMeteo.action"))
+        .GET()
+        .build()
+
+    //  Enviar la solicitud con el cliente
+    val response = client.send(request, HttpResponse.BodyHandlers.ofString())
+
+    // obtener string con datos
+    val jsonBody = response.body()
+
+    // Deserializar el JSON a una lista de objetos User
+    val meteo: List<Meteo>
+    if (jsonBody[0] == '{') {
+        val temporal = mutableListOf<Meteo>()
+        temporal.add(Json.decodeFromString(jsonBody))
+        meteo = temporal.toList()
+    }
+    else {
+        meteo = Json.decodeFromString(jsonBody)
+    }
+
+
+    //println(users)
+
+    // Imprimir los usuarios con diversos campos
+    println("#1")
+    println("Concellos de A Coruña con estacion ordenados alfabeticamente")
+    meteo.forEach { meteo ->
+        println(meteo.listDatosDiarios[0].data)
+        meteo.listDatosDiarios.forEach{
+            it.listaEstacions.filter{ it.provincia == "A Coruña" }.distinctBy { it.concello }.sortedBy { it.concello }.forEach{
+                println("Concello: ${it.concello}")
+            }
+        }
+    }
+
+    println()
+    println("#2")
+    println("Estaciones mayor temperatura maxima a menor")
+    meteo.forEach { meteo ->
+        meteo.listDatosDiarios.forEach{ it ->
+            val listaTemperaturas = mutableListOf<temperaturaMaxima>()
+            it.listaEstacions.forEach {
+                val temporal: Double? = it.listaMedidas.find { it.codigoParametro == "TA_MAX_1.5m" }?.valor
+                if (temporal != null) {
+                    listaTemperaturas.add(temperaturaMaxima(it.estacion, temporal))
+                }
+                else {
+                    listaTemperaturas.add(temperaturaMaxima(it.estacion, 0.0))
+                }
+            }
+
+            listaTemperaturas.sortedByDescending { it.temperatura }.forEach{
+                println("Estacion: ${it.estacion} Temperatura: ${it.temperatura}")
+            }
+        }
+    }
+}
