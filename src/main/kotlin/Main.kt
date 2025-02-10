@@ -88,17 +88,10 @@ fun main() {
     println("Estaciones mayor temperatura maxima a menor")
     meteo.forEach { meteo ->
         meteo.listDatosDiarios.forEach{ it ->
-            val listaTemperaturas = mutableListOf<temperaturaMaxima>()
-            it.listaEstacions.forEach {
-                val temporal: Double? = it.listaMedidas.find { it.codigoParametro == "TA_MAX_1.5m" }?.valor
-                if (temporal != null) {
-                    listaTemperaturas.add(temperaturaMaxima(it.estacion, temporal))
-                }
-                else {
-                    listaTemperaturas.add(temperaturaMaxima(it.estacion, 0.0))
-                }
+            val listaTemperaturas = it.listaEstacions.map { estacion ->
+                val temperatura = estacion.listaMedidas.find { it.codigoParametro == "TA_MAX_1.5m" }?.valor ?: 0.0
+                temperaturaMaxima(estacion.estacion, temperatura)
             }
-
             listaTemperaturas.sortedByDescending { it.temperatura }.forEach{
                 println("Estacion: ${it.estacion} Temperatura: ${it.temperatura}")
             }
