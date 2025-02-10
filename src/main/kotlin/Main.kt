@@ -97,4 +97,15 @@ fun main() {
             }
         }
     }
+
+    println()
+    println("#3")
+    println("Numero de estaciones por provincia")
+    meteo.forEach { meteo ->
+        meteo.listDatosDiarios.forEach {
+            it.listaEstacions.groupBy { it.provincia }.forEach {
+                println("En "+it.key+" posee un total de "+it.value.size+" estaciones")
+            }
+        }
+    }
 }

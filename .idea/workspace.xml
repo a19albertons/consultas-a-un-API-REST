@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e46b3a3-9925-43ab-bff1-b7be9484e9e2" name="Changes" comment="" />
+    <list default="true" id="0e46b3a3-9925-43ab-bff1-b7be9484e9e2" name="Changes" comment="Se añade una tercera conulta numero total de estaciones en cada provincia">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +65,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build consultas-a-un-API-REST.executor": "Run",
     "Gradle.Build consultasAPIRest.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -96,7 +99,29 @@
       <option name="presentableId" value="Default" />
       <updated>1739174827915</updated>
     </task>
+    <task id="LOCAL-00001" summary="Optimización codigo a man funcional puro">
+      <option name="closed" value="true" />
+      <created>1739184299109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739184299109</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se añade una tercera conulta numero total de estaciones en cada provincia">
+      <option name="closed" value="true" />
+      <created>1739184701402</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739184701402</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Optimización codigo a man funcional puro" />
+    <MESSAGE value="Se añade una tercera conulta numero total de estaciones en cada provincia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añade una tercera conulta numero total de estaciones en cada provincia" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
