@@ -86,7 +86,7 @@ fun main() {
     println("#2")
     println("Estaciones mayor temperatura maxima a menor")
     meteo.forEach { meteo ->
-        meteo.listDatosDiarios.forEach{ it ->
+        meteo.listDatosDiarios.forEach{
             val listaTemperaturas = it.listaEstacions.map { estacion ->
                 val temperatura = estacion.listaMedidas.find { it.codigoParametro == "TA_MAX_1.5m" }?.valor ?: -9999.0 // Si el valor es nulo indicamos -9999.0 viendo los numeros de algunas estaciones
                 temperaturaMaxima(estacion.estacion, temperatura)
