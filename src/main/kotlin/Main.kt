@@ -75,7 +75,6 @@ fun main() {
     println("#1")
     println("Concellos de A Coruña con estacion ordenados alfabeticamente")
     meteo.forEach { meteo ->
-        println(meteo.listDatosDiarios[0].data)
         meteo.listDatosDiarios.forEach{
             it.listaEstacions.filter{ it.provincia == "A Coruña" }.distinctBy { it.concello }.sortedBy { it.concello }.forEach{
                 println("Concello: ${it.concello}")

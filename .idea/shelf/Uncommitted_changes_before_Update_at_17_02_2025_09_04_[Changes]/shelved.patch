@@ -1,0 +1,52 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0e46b3a3-9925-43ab-bff1-b7be9484e9e2\" name=\"Changes\" comment=\"Se añade una tercera conulta numero total de estaciones en cada provincia\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"consultasAPIRest\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"consultasAPIRest\" type=\"f1a62948:ProjectNode\" />\r\n                <item name=\"Dependencies\" type=\"6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;a19albertons&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/a19albertons/consultas-a-un-API-REST.git&quot;,\r\n    &quot;accountId&quot;: &quot;cab69c82-9a7b-4880-a11a-6e98249ca151&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2sqEi3SUNgVM6mseKNKgSvM6rVs\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Gradle.Build consultas-a-un-API-REST.executor\": \"Run\",\r\n    \"Gradle.Build consultasAPIRest.executor\": \"Run\",\r\n    \"Kotlin.MainKt.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/a19albertons/IdeaProjects/consultasAPIRest/src/main/kotlin/Main.kt\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"kotlin-gradle-user-dirs\": [\r\n      \"C:\\\\Users\\\\a19albertons\\\\.gradle\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"consultas-a-un-API-REST\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"consultas-a-un-API-REST\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0e46b3a3-9925-43ab-bff1-b7be9484e9e2\" name=\"Changes\" comment=\"\" />\r\n      <created>1739174827915</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1739174827915</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Optimización codigo a man funcional puro\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739184299109</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739184299109</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Se añade una tercera conulta numero total de estaciones en cada provincia\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739184701402</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739184701402</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Optimización codigo a man funcional puro\" />\r\n    <MESSAGE value=\"Se añade una tercera conulta numero total de estaciones en cada provincia\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Se añade una tercera conulta numero total de estaciones en cada provincia\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <watches-manager>\r\n      <configuration name=\"JetRunConfigurationType\">\r\n        <watch expression=\"meteo\" />\r\n      </configuration>\r\n    </watches-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0e46b3a3-9925-43ab-bff1-b7be9484e9e2" name="Changes" comment="Se añade una tercera conulta numero total de estaciones en cada provincia" />
++    <list default="true" id="0e46b3a3-9925-43ab-bff1-b7be9484e9e2" name="Changes" comment="Modificamos el valor nulo de 0 a -9999.0" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -39,6 +39,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -118,13 +119,22 @@
+       <option name="project" value="LOCAL" />
+       <updated>1739184701402</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Modificamos el valor nulo de 0 a -9999.0">
++      <option name="closed" value="true" />
++      <created>1739260544312</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1739260544312</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Optimización codigo a man funcional puro" />
+     <MESSAGE value="Se añade una tercera conulta numero total de estaciones en cada provincia" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Se añade una tercera conulta numero total de estaciones en cada provincia" />
++    <MESSAGE value="Modificamos el valor nulo de 0 a -9999.0" />
++    <option name="LAST_COMMIT_MESSAGE" value="Modificamos el valor nulo de 0 a -9999.0" />
+   </component>
+   <component name="XDebuggerManager">
+     <watches-manager>
